@@ -22,5 +22,5 @@ else
     rabbitmqctl start_app
 fi
 
-# Keep foreground process active ...
-tail -f /var/log/rabbitmq/*.log
+# Keep foreground process active using a sleep, each node will log on stdout
+sleep infinity
